@@ -12,7 +12,7 @@ form.addEventListener("submit", async (e) => {
   msg.style.color = "#666";
 
   try {
-    const response = await fetch(`https://api.dinod2.com/dev/signup?token=${token}&firstName=${encodeURIComponent(firstName)}&emailAddress=${encodeURIComponent(emailAddress)}`, {
+    const response = await fetch(`https://api.dinod2.com/v0/signup?token=${token}&firstName=${encodeURIComponent(firstName)}&emailAddress=${encodeURIComponent(emailAddress)}`, {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     });
@@ -44,3 +44,4 @@ form.addEventListener("submit", async (e) => {
   }
 
 });
+
